@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0 ; i<chords.length ; i++){
             soundID[i] = soundPool.load(this, chords[i], 1);
         }
-
     }
 
     public void startGame(View v){
