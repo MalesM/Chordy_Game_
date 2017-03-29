@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context="com.example.gospodin.chordy_game.GameActivity">
 
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="44dp"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playB" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="44dp"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/b1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playB" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="29dp"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/b1"
+        app:layout_constraintRight_toRightOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="29dp"
+        android:onClick="checkAnswer"
+        android:text="Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/b2"
+        app:layout_constraintRight_toRightOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/playB"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="play"
+        android:text="PLAY CHORD"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
