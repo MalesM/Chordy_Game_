@@ -11,7 +11,8 @@ import java.util.Random;
 public class GameActivity extends AppCompatActivity {
 
     Button b1, b2, b3, b4, playB;
-    private int flag;
+    private int flag1, flag2;
+    private int answerID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +28,24 @@ public class GameActivity extends AppCompatActivity {
     }
 
     public void changeAnswers(){
+        Answer answer = myArray(MainActivity.chordNames);
 
     }
 
 
-    public class Answer{
-        private int[] arr;
+    private class Answer{
+        private String[] arr;
         private int element;
 
-        public Answer(int[] arr, int element){
+        public Answer(String[] arr, int element){
             this.arr=arr;
             this.element=element;
         }
         public int getAnswer(){return this.element;}
-        public int[] getArr(){return this.arr;}
+        public String[] getArr(){return this.arr;}
 
     }
-    public Answer myArray(int[] arr){
+    public Answer myArray(String[] arr){
         int element = new Random().nextInt(arr.length);
         int pozicija = new Random().nextInt(4);
         System.out.println(pozicija);
@@ -56,7 +58,7 @@ public class GameActivity extends AppCompatActivity {
         }
         System.out.println(pozicija);
         System.out.println(arr[element]);
-        int[] niz2 = Arrays.copyOfRange(arr, element-pozicija, element-pozicija+4);
+        String[] niz2 = Arrays.copyOfRange(arr, element-pozicija, element-pozicija+4);
 
         return new Answer(niz2, element);
     }
