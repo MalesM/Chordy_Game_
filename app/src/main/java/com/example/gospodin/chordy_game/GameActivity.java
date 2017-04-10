@@ -150,20 +150,20 @@ public class GameActivity extends AppCompatActivity {
 
     }
     public Answer myArray(String[] arr){
+        int gornjaGranica, donjaGranica;
         int element = new Random().nextInt(arr.length);
         int pozicija = new Random().nextInt(4);
-        System.out.println(pozicija);
-        if ((element - pozicija) < 0) {
+
+        if(element<arr.length/2){donjaGranica = 0; gornjaGranica = arr.length/2;}
+            else{donjaGranica = arr.length/2; gornjaGranica = arr.length;}
+
+        if ((element - pozicija) < donjaGranica) {
             pozicija = element;
         }
-
-        if((element - pozicija + 3 )>(arr.length - 1)){
-            pozicija = element - arr.length + 4;
+        if((element - pozicija + 3 )>(gornjaGranica - 1)){
+            pozicija = element - gornjaGranica + 4;
         }
-        System.out.println(pozicija);
-        System.out.println(arr[element]);
         String[] niz2 = Arrays.copyOfRange(arr, element-pozicija, element-pozicija+4);
-
         return new Answer(niz2, element);
     }
 
