@@ -11,11 +11,14 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button dugmeStart, dugmePregled;
-    static final String[] chordNames = new String[]{"A","B","C","D","E"};
+    static final String[] chordNames = new String[]{"A","B","C","D","E","F","G",
+                                                    "Am","Bm","Cm","Dm","Em","Fm","Gm"};
     static final int[] chordImagdes = new int[]{
-            R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d, R.drawable.e};
+            R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d, R.drawable.e, R.drawable.f, R.drawable.g,
+            R.drawable.am,R.drawable.bm,R.drawable.cm,R.drawable.dm, R.drawable.em, R.drawable.fm, R.drawable.gm};
     static final int[] chords = new int[]{
-            R.raw.a, R.raw.b, R.raw.c, R.raw.d, R.raw.e
+            R.raw.a, R.raw.b, R.raw.c, R.raw.d, R.raw.e, R.raw.f, R.raw.g,
+            R.raw.am, R.raw.bm, R.raw.cm, R.raw.dm, R.raw.em, R.raw.fm, R.raw.gm,
     };
     static SoundPool soundPool;
     static boolean loaded = false;
