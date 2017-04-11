@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.am,R.drawable.bm,R.drawable.cm,R.drawable.dm, R.drawable.em, R.drawable.fm, R.drawable.gm};
     static final int[] chords = new int[]{
             R.raw.a, R.raw.b, R.raw.c, R.raw.d, R.raw.e, R.raw.f, R.raw.g,
-            R.raw.am, R.raw.bm, R.raw.cm, R.raw.dm, R.raw.em, R.raw.fm, R.raw.gm,
-    };
+            R.raw.am, R.raw.bm, R.raw.cm, R.raw.dm, R.raw.em, R.raw.fm, R.raw.gm};
     static SoundPool soundPool;
     static boolean loaded = false;
     static int[] soundID;

@@ -166,7 +166,6 @@ public class GameActivity extends AppCompatActivity {
         String[] niz2 = Arrays.copyOfRange(arr, element-pozicija, element-pozicija+4);
         return new Answer(niz2, element);
     }
-
     public void resetButtonColor(){
         b1.setBackground(d);
         b2.setBackground(d);
