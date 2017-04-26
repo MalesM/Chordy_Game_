@@ -158,7 +158,7 @@ public class GameActivity extends AppCompatActivity {
             else{donjaGranica = arr.length/2; gornjaGranica = arr.length;}
 
         if ((element - pozicija) < donjaGranica) {
-            pozicija = element;
+            pozicija = element - donjaGranica;
         }
         if((element - pozicija + 3 )>(gornjaGranica - 1)){
             pozicija = element - gornjaGranica + 4;
