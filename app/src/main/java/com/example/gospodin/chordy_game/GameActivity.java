@@ -12,10 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Arrays;
 import java.util.Random;
-
 import static android.widget.Toast.makeText;
 
 public class GameActivity extends AppCompatActivity {
